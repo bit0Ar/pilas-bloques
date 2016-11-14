@@ -1,4 +1,4 @@
-{{#if model.deshabilitado}}
+{{!-- {{#if model.deshabilitado}}
 
   {{#if model.nombre}}
     <img class='grayscale semi-transparente' src='images/desafios/{{model.nombre}}.png'>
@@ -12,15 +12,16 @@
 
   <div class='pilas-desafio-titulo'>{{model.titulo}}</div>
 
-{{else}}
+{{else}} --}}
 
-  {{#link-to "desafio" model (query-params codigo="")}}
+  {{#link-to "desafio" model (query-params )}}
 
     {{#if model.nombre}}
       <img class='desafio-img' src='images/desafios/{{model.nombre}}.png'>
     {{/if}}
 
-    <div class='pilas-desafio-titulo'>{{model.titulo}}</div>
+    <div class='pilas-desafio-titulo'>{{model.titulo}} </div>
   {{/link-to}}
 
-{{/if}}
+{{!-- {{/if}}
+ --}}

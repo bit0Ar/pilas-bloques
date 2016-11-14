@@ -9,5 +9,6 @@ export default Ember.Route.extend({
   afterModel(model) {
     let actividad = this.get("actividades").obtenerPorNombre(model.get('nombre'));
     model.set('actividad', actividad);
+    console.log('mio',actividad);
   }
 });

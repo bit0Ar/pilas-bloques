@@ -23,6 +23,7 @@ var Actividad = Ember.Object.extend({
     this.set('puedeDesactivar', actividad.puedeDesactivar);
     this.set('puedeDuplicar', actividad.puedeDuplicar);
     this.set('esDeExploracion', actividad.esDeExploracion);
+    this.set('estaActiva', 0);
     this.setColours();
     this.pisar_bloques_blockly();
   },

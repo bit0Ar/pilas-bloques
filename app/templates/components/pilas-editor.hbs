@@ -41,16 +41,16 @@
 {{pilas-splitter panel="#panel-izquierdo" iframe="iframe" ayuda="#panel-ayuda"}}
 
 {{#if panelBlocklyVisible}}
-    {{pilas-blockly guardar='guardar'
+    {{               pilas-blockly guardar='guardar'
                     registrarPrimerCodigo='registrarPrimerCodigo'
-                    codigo=codigo
+                    codigo=false
 
-                    modoDocente=modoDocente modoAlumno=modoAlumno
-                    hash=hash idAlumno=idAlumno
+                    modoDocente=false modoAlumno=false
+                    hash=false idAlumno=0
                     guardar_solucion_en_el_backend="guardar_solucion_en_el_backend"
 
-                    persistirSolucionEnURL=persistirSolucionEnURL
-                    debeMostrarFinDeDesafio=debeMostrarFinDeDesafio
+                    persistirSolucionEnURL=false
+                    debeMostrarFinDeDesafio=true
                     pilas=pilas
                     codigoJavascript=codigoJavascript
                     actividad=model.actividad}}
