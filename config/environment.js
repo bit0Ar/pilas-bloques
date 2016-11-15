@@ -3,7 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'pilas-engine-bloques',
-    environment: environment,
+    environment: 'development',
     baseURL: '/',
     versionURL: 'http://pilasbloques.programar.gob.ar/version.json',
     downloadURL: 'http://hugoruscitti.github.io/pilas-engine-bloques/descargas/pilas-engine-bloques-VERSION.zip',

@@ -11,6 +11,7 @@ export default Ember.Service.extend({
    * cualquier otro caso va a retornar 0.
    */
   comparar(v1, v2) {
+console.log('servicio comparar');
 
     function parseVersionString (str) {
       if (typeof(str) !== 'string') {
@@ -45,6 +46,8 @@ export default Ember.Service.extend({
    * aplicación para actualizar.
    */
   consultar() {
+console.log('servicio consultar');
+
     let versionActual = environment.APP.version;
     let url = environment['versionURL'];
 

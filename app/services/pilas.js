@@ -43,6 +43,8 @@ export default Ember.Service.extend(Ember.Evented, {
    * @public
    */
   inicializarPilas(iframeElement, options) {
+console.log('servicio inicial');
+
     this.set("iframe", iframeElement);
     this.set("loading", true);
 

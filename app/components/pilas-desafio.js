@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   classNames: ['desafio'],
-  nombre: null,
+  nombre: 'caca',
   deshabilitada: false,
 
   actions: {

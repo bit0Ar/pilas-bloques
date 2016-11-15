@@ -5,14 +5,21 @@
 
 
 
-  {{#each model as |grupo|}}
+  {{!-- {{#each model as |grupo|}} --}}
 
 
 
-    {{#each grupo.desafios as |desafio|}}
-      {{pilas-desafio model=desafio}}
+    {{#each model as |desafio| }}
+      {{!-- {{pilas-desafio model=desafio}} --}}
+{{#if (eq desafio.id "1") }}
+      {{desafio.id}}
+      {{pilas-desafio model=desafio }}
+
+ {{/if}}     
+
+
     {{/each}}
 
-  {{/each}}
+  {{!-- {{/each}} --}}
 
 </div>

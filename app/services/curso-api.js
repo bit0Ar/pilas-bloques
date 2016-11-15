@@ -22,10 +22,12 @@ export default Ember.Service.extend({
       done(success).
       fail(reject);
     });
+console.log('servicio guardar');
 
   },
 
   obtener_solucion_xml_desde_hash(hash) {
+console.log('servicio obtener');
 
     return new Ember.RSVP.Promise((success, reject) => {
       $.ajax({

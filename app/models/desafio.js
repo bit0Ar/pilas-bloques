@@ -10,5 +10,9 @@ export default Model.extend({
   consignaInicial: attr('string'),
   escena: attr('string'),                 // escena que se tiene que cargar, por ejemplo: 'AlienInicial'
   actividad: attr(),                       // se completa desde el hook del desafío.
-  grupo: belongsTo('grupo')
+  esActivo: attr('integer'),
+
+  isComplete: Ember.computed.equal('id', null)
 });
+
+
