@@ -10,12 +10,12 @@
 
 
     {{#each model as |desafio| }}
-      {{!-- {{pilas-desafio model=desafio}} --}}
-{{#if (eq desafio.id "1") }}
-      {{desafio.id}}
-      {{pilas-desafio model=desafio }}
+      {{pilas-desafio model=desafio}}
 
- {{/if}}     
+      {{!-- {{desafio.id}} --}}
+
+      {{!-- {{pilas-desafio model=desafio }} --}}
+
 
 
     {{/each}}

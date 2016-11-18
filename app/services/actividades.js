@@ -108,7 +108,6 @@ export default Ember.Service.extend({
     actividades = actividades.concat(actividadesDibujandoFiguras);
 
     var actividad = actividades.findBy('id', nombre);
-console.log('servicio actividad',actividad);
     if (!actividad) {
       throw new Error(`No se encuentra la actividad de nombre ${nombre}`);
     }

@@ -1,0 +1,7 @@
+{{! app/templates/application.hbs }}
+{{#unless settings.welcomeMessageSeen}}
+  You will see this message until you click
+  <button {{action "toggleWelcomeMessage"}}>X {{settings.welcomeMessageSeen}}</button>
+{{else}}
+  <button {{action "toggleWelcomeMessage"}}>Undo {{settings.welcomeMessageSeen}}</button>
+{{/unless}}

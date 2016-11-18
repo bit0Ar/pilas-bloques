@@ -9,6 +9,11 @@ export default Ember.Component.extend({
     onReady(pilas) {
       this.sendAction("onReady", pilas);
     },
+   
+    toggleBody() {
+        console.log("Look at me go!");
+        this.toggleProperty('isBody');
+    },
     guardar_solucion_en_el_backend(codigo_xml) {
        let hash = this.get("hash");
        let idAlumno = this.get("idAlumno");

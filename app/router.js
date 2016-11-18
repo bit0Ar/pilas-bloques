@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('acercade');
   this.route('desafio', {path: '/desafio/:desafio_id'});
+  // this.route('storage');
 
   /* Rutas para el curso online 2016 (moodle) */
   this.route('desafios', function() {

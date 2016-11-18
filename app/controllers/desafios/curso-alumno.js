@@ -6,4 +6,10 @@ export default Ember.Controller.extend({
   codigo: null,
   debug: true,
   codigoJavascript: '',
+  actions: {
+    toggleBody() {
+        console.log("Look at me go!");
+        this.toggleProperty('isBody');
+    }
+  }
 });

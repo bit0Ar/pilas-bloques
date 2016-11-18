@@ -13,14 +13,20 @@
   <div class='pilas-desafio-titulo'>{{model.titulo}}</div>
 
 {{else}} --}}
+{{!-- <h3><button {{action "toggleBody"}}>{{title}}</button></h3>
+{{#if isShowingBody}}
+  <p>{{{body}}}</p>
+{{/if}} --}}
 
-  {{#link-to "desafio" model}}
+{{! app/templates/application.hbs}}
+{{settings.desafio}} 
+  {{#link-to "desafio" model  }}
 
     {{#if model.nombre}}
       <img class='desafio-img' src='images/desafios/{{model.nombre}}.png'>
     {{/if}}
 
-    <div class='pilas-desafio-titulo'>{{model.titulo}} </div>
+    <div class='pilas-desafio-titulo'>{{model.titulo}} {{settings.desafio}} </div>
   {{/link-to}}
 
 {{!-- {{/if}}

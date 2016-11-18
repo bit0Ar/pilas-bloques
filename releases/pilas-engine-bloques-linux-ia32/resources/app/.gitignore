@@ -1,0 +1,32 @@
+# compiled output
+/dist
+/tmp
+
+.DS_Store
+
+*.swp
+
+# dependencies
+/node_modules
+/bower_components
+
+/blockly/
+/closure-library/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+
+public/libs/pilasweb.js
+
+dist_web
+dist_website
+
+log_descompresion.log
+*.pyc
+/docs/
+/binarios/

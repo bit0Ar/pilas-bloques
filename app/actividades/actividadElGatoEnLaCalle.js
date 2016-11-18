@@ -63,12 +63,12 @@ export default {
   id: 'ElGatoEnLaCalle',
   // DEPRECATED: enunciado: 'Hacé que el gato avance un paso, se duerma, se despierte, salude y vuelva a su lugar.',
   // DEPRECATED: consignaInicial: 'Se pueden crear nuevas acciones en Procedimientos definiendo nuevos bloques que incluyan otras acciones.',
-  esDeExploracion: true,
+  // esDeExploracion: true,
 
-  // DEPRECATED: escena: ElGatoEnLaCalle,
-  puedeComentar: false,
-  puedeDesactivar: false,
-  puedeDuplicar: false,
+  // escena: 'ElGatoEnLaCalle',
+  puedeComentar: true,
+  puedeDesactivar: true,
+  puedeDuplicar: true,
 
   bloques: [Procedimiento,Saludar,Avanzar,Volver,AbrirOjos,CerrarOjos,Acostarse,Pararse,Soniar],
 };

@@ -1,0 +1,25 @@
+<div class='contenido-principal'>
+
+  <h1>Desafíos</h1>
+
+
+
+
+  {{!-- {{#each model as |grupo|}} --}}
+
+
+
+    {{#each model as |desafio| }}
+      {{!-- {{pilas-desafio model=desafio}} --}}
+{{#if (eq desafio.id "1") }}
+      {{desafio.id}}
+      {{pilas-desafio model=desafio }}
+
+ {{/if}}     
+
+
+    {{/each}}
+
+  {{!-- {{/each}} --}}
+
+</div>
